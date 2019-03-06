@@ -7,5 +7,5 @@ function changeValues() {
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
 }
 
-input.forEach(a=>a.addEventListener('change', changeValues));
-input.forEach(a=>a.addEventListener('mousemove', changeValues));
+input.forEach(inputEntered => inputEntered.addEventListener('change', changeValues));
+input.forEach(inputEntered => inputEntered.addEventListener('mousemove', changeValues));
